@@ -43,9 +43,14 @@ public enum Planeta {
         // 6.67300E-11 * 3.303e+23 / 2.4397e6
     }
 
-    public double gravedadSuperficie(Planeta planeta) {
+    private double gravedadSuperficie(Planeta planeta) {
 		return G * planeta.getMasa() / Math.pow(planeta.getRadio(), 2);
 	}
 
+    private double masaPersona(double peso) {
+        return peso / gravedadSuperficie(EARTH);
+    }
+
+    
 
 }
