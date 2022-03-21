@@ -1,5 +1,7 @@
 package edu.poniperro.domain;
 
+import java.util.EnumSet;
+
 /**
  * An enum (also known as enumeration and enumerated data type)
  * lets you create an ordered list of constants as a type.
@@ -53,6 +55,14 @@ public enum Planeta {
 
     public double pesoSuperficie(double peso) {
         return masaPersona(peso) * gravedadSuperficie();
+    }
+
+    /**
+     * java.util.EnumSet collection class to work with ranges of enum constants of an enum type.
+     *   The implementation of the EnumSet class is very efficient.
+     */
+    public static EnumSet<Planeta> getPlanetasTerrestres() {
+        return EnumSet.range(Planeta.MERCURY, Planeta.MARS);
     }
 
 }
