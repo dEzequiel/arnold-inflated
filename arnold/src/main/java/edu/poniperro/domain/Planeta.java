@@ -16,6 +16,7 @@ public enum Planeta {
 
     private double radio = 0f;
     private double masa = 0f;
+    private final double G = 6.67300E-11;
 
     /**
      * Constructor parameters should be equal to the ones passed
@@ -36,4 +37,10 @@ public enum Planeta {
     public double getRadio() {
         return this.radio;
     }
+
+    private double gravedadSuperficie() {
+        return G * getMasa() / Math.pow(getRadio(), 2);
+    }
+
+
 }
