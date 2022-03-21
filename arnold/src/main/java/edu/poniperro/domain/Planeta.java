@@ -17,8 +17,20 @@ public enum Planeta {
     private double ratio = 0f;
     private double masa = 0f;
 
+    /**
+     * Constructor parameters should be equal to the ones passed
+     * into the enum constants.
+     *
+     * @param masa
+     * @param ratio
+     */
     private Planeta(double masa, double ratio) {
         this.masa = masa;
         this.ratio = ratio;
     }
+
+    public double getMasa() {
+        return this.masa;
+    }
+
 }
