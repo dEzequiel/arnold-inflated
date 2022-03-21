@@ -13,4 +13,12 @@ public enum Planeta {
     SATURN (5.688e+26, 6.0268e7),
     URANUS (8.686e+25, 2.5559e7),
     NEPTUNE (1.024e+26, 2.4746e7);
+
+    private double ratio = 0f;
+    private double masa = 0f;
+
+    private Planeta(double masa, double ratio) {
+        this.masa = masa;
+        this.ratio = ratio;
+    }
 }
