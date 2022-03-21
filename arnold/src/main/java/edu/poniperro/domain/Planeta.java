@@ -65,4 +65,7 @@ public enum Planeta {
         return EnumSet.range(Planeta.MERCURY, Planeta.MARS);
     }
 
+    public static EnumSet<Planeta> getGigantesGaseosos() {
+        return EnumSet.range(Planeta.JUPITER, Planeta.NEPTUNE);
+    }
 }
